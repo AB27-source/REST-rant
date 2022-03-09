@@ -19,7 +19,7 @@ ROUTES
 | Delete | /places/:id/rant/rantid | Delete a rant (comment) about a particular place |
 |   GET  |            *            |  404 page (matches any route not defined above)  |
 
-Database
+DATABASE
 --------
 
 |   Field  |  Type  |
