@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
+app.use(express.urlencoded({ extended: true }))
 
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
@@ -19,5 +20,7 @@ app.get('*', (req, res) => {
 app.get('/new', (req, res) => {
     res.render('places/new')
   })
+
+
   
 app.listen(process.env.PORT)
