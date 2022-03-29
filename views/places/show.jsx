@@ -12,8 +12,13 @@ function show (data) {
                 <h3>currently Unrated</h3>
             </div>
             <div>
+                <h2> Description</h2>
+                <h3> {data.place.city},{data.place.state} </h3>
+                <h3> {data.place.cuisines} </h3>
+            </div>
+            <div>
                 <h2>Comments</h2>
-                <h3>No comments yet!</h3>
+                <h4>No comments yet!</h4>
             </div>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning"> Edit </a>     
             <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
