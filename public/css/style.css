@@ -12,6 +12,11 @@ h2 {
     max-height: 50vh;
 }
 
+.indexIMG{
+  height: 400px;
+  width: 400px;
+}
+
 nav {
   background-color: cornflowerblue;
   padding: 10px;
